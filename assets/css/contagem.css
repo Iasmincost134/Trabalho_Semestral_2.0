@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Source Sans 3 SemiBold', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
+  }
+       html {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  background-image: url('/assets/img/contagem.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+ul#countdown {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 50%;
+  margin: 0 auto;
+  /* padding: 70px 20px; */
+  padding: 140px 40px 75px 40px;
+  color: #fff;
+  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.589);
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  
+  li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 72px;
+    font-size: 6vw;
+    text-align: center;
+    
+    .label {
+      color: #ffffff;
+      font-size: 18px;
+      font-size: 1.5vw;
+      text-transform: uppercase;
+    }
+  }
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    position: relative;
+  top: 40%;
+  z-index: 3;
+  text-align: center;
+  transform: translateY(-50%);
+  font-family: 'Source Sans 3 SemiBold', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-shadow: 0 0 100px white 0 0 30px pink;
+}
+
+h1 span{
+    display: inline-block;
+    margin-bottom: 30px;
+    animation: text 1s ease-in-out infinite;
+}
+
+@keyframes text {
+    0%{
+        transform: none;
+        opacity: 0;
+        animation-delay: 0.5s;
+    }
+    10%{
+        opacity: 0.1;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.3;
+        transform: translateY(-1px);
+        animation-delay: .1s;
+    }
+    40%{
+        opacity: 0.4;
+        transform: translateY(-1deg);
+        animation-delay: .15s;
+    }
+    50%{
+        opacity: 0.5;
+        animation-delay: .20s;
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateY(1px);
+        animation-delay: .25s;
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateY(2deg);
+        animation-delay: .3s;
+    }
+    80%{
+        opacity: 0.8;
+        animation-delay: .35s;
+    }
+    90%{
+        opacity: 0.9;
+        animation-delay: .4s;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+        animation-delay: .45s;
+    }
+}
+.icon-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(46, 46, 46);
+    border-radius:10%;
+    width:50px;
+    font-size: 20px;
+    height: 50px;
+    
+}
+
+.icon-button i {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+   font-size: 50px;
+}

@@ -1,0 +1,107 @@
+
+    body{
+    overflow: hidden;
+  }
+  .body{
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    left: -255px;
+    background-attachment: fixed;
+    height: 110vh;
+  }
+  img {
+      position: absolute;
+      margin-left: 15%;
+  display:inline-block;
+    height:80vh;
+  }
+  
+  
+  .btn-default{
+    margin-top:20%;
+  }
+  button{
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin: 0 5px 30px 0;
+  }
+  ul{
+      list-style-type: none;
+      display:inline-block;
+  }
+  
+  .shirt{
+      visibility:hidden;
+    z-index: 2;
+  }
+  
+  .pant{
+      visibility:hidden;
+    z-index: 1;
+      }
+      .container {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 24px auto;
+      max-width: 640px;
+  }
+  #sliderPicker {
+      border: solid 2px #5a5a5a;
+      border-radius: 8px;
+      background: rgba(216, 216, 216, 0.692);
+      font: normal 14px/1.2 sans-serif;
+      height: auto;
+      margin-top: 80px;
+      max-height: 335px;
+      padding: 24px;
+  }
+  #sliderPicker p {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 2;
+  }
+  #sliderPicker ul[id="colorTarget"] {
+      display: flex;
+      flex-flow: row nowrap;
+      list-style: none;
+      margin: 0 0 12px;
+      padding: 0;
+  }
+  #sliderPicker ul[id="colorTarget"] li {
+      margin-right: 1em;
+  }
+  .takeImageBtn{  
+      position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(34, 39, 109);
+    border: 1px solid rgb(46, 46, 46);
+    border-radius:50%;
+    width:50px;
+    font-size: 20px;
+    height: 50px;
+  }
+  .takeImageBtn i{  
+     color: white;
+  }
+  .icon-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(46, 46, 46);
+    border-radius:10%;
+    width:50px;
+    font-size: 40px;
+    height: 50px;
+
+}
+  #voltar{
+      font-size: 55px;
+      margin-bottom: 60px;
+      margin-left: 30px;
+      margin-top: 20px;
+      border: transparent;
+    border: none;
+  }

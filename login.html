@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro - Fashion History</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="https://kit.fontawesome.com/fe7113a0a0.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="assets/img/home/icon2.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container" id="register-form">
+            <form action="#" id="form2">
+                <h1>CADASTRE-SE</h1>
+                <span>Juste-se à Fashion History</span>
+                <div class="social-container">
+                    <a href="#" class="social" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social" id="google"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social" id="github"><i class="fa-brands fa-github"></i></a>
+                </div>
+ 
+                <div class="case_input_background_mode">
+                <label for=""><iconify-icon icon="ph:user"></iconify-icon></label>
+                <input type="text" placeholder="Usuário" id="usuario"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+
+                <div class="case_input_background_mode">
+                <label for=""><iconify-icon icon="ic:outline-email"></iconify-icon></label>
+                <input type="email" placeholder="Email" id="email2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+
+                <div class="case_input_background_mode">
+                <label for=""><iconify-icon icon="mdi:password-outline"></iconify-icon></label>
+                <input type="password" placeholder="Senha" id="password" class="password1"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                 <label id="icon" onclick="showHide()"><iconify-icon icon="iconamoon:eye-off-thin"></iconify-icon></label>
+                 </div>
+                <p>Quer ajuda para criar uma senha segura?<span id="generate-password">Clique aqui.</span></p>
+                <div id="generated-password">
+                    <p>Aqui esta a sua senha:</p>
+                    <h4></h4>
+                </div>
+                <div class="case_input_background_mode">
+                <label for=""><iconify-icon icon="mdi:password-outline"></iconify-icon></label>
+                <input type="password" placeholder="Confirme a senha" id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+                 <button id="cadastre-se">Cadastre-se</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="form" action="#">
+                <h1>LOGIN</h1>
+                <span>Bem vindo de volta!</span>
+                <div class="social-container">
+                    <a href="#" class="social" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social" id="google"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social" id="github"><i class="fab fa-github"></i></i></a>
+                </div>
+              
+                <div class="case_input_background_mode">
+                    <label for=""><iconify-icon icon="ic:outline-email"></iconify-icon></label>
+                    <input type="email" placeholder="Email" id="email"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+    
+                    <div class="case_input_background_mode">
+                    <label for=""><iconify-icon icon="mdi:password-outline"></iconify-icon></label>
+                    <input type="password" placeholder="Senha" id="password3"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                    
+                <a href="#">Esqueceu sua senha?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Seja bem vindo novamente!</h1>
+                    <p>Para se conectar conosco por favor faça o login</p>
+                    <button class="ghost" id="signIn">login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>OLÁ, LEITOR!</h1>
+                    <p>Junte-se conosco! Explore um novo mundo da moda</p>
+                    <button class="ghost" id="signUp">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

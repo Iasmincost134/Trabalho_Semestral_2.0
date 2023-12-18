@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion History</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/7857a8a2eb.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <link rel="shortcut icon" href="/PROJETO SEMESTRAL 2/assets/img/home/icon2.ico" type="image/x-icon">
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <!-- cabecalho -->
+  <header class="header">
+    <nav class="nav">
+      <a href="/" class="logo"><img src="assets/img/home/logo.svg" alt=""></a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="botoes/Tecnologia (1)/tec.html">Tecnologia</a></li><div id="verticle-line"></div>
+        <li><a href="botoes/Sustentabilidade (1)/sust.html">Socioambiental</a></li><div id="verticle-line"></div>
+        <li><a href="botoes/Cultura (1)/cult.html">Cultura</a></li><div id="verticle-line"></div>
+        <li><a href="botoes/Evolução (1)/evol.html">Evolução</a></li>
+        </ul>
+        <div class="search">
+          <a href="login.html"><button class="login">Login</button></a>
+         <button class="icon" id="search" onclick="search()">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000"
+                     d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z">
+                 </path>
+                 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000" d="M22 22L20 20">
+                 </path>
+             </svg>
+         </button>
+         <input placeholder="search.." class="input" name="searchbar" type="text" id="searchbar">
+        </div>
+        </nav>
+  </header>
+
+  <!-- carrossel de imagens -->
+  <div class="content">
+
+    <div class="slides">
+
+      <input class="input1" type="radio" name="slide" id="slide1" checked>
+      <input class="input1" type="radio" name="slide" id="slide2">
+      <input class="input1" type="radio" name="slide" id="slide3">
+      <input class="input1" type="radio" name="slide" id="slide4">
+      <input class="input1" type="radio" name="slide" id="slide5">
+
+
+      <div class="slide s1">
+        <img src="assets/img/home/1 - Copia.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="assets/img/home/2 - Copia.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="assets/img/home/3 - Copia.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="assets/img/home/4 - Copia.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="navigation">
+    <label class="bar" for="slide1"></label>
+    <label class="bar" for="slide2"></label>
+    <label class="bar" for="slide3"></label>
+    <label class="bar" for="slide4"></label>
+  </div>
+
+  <!-- parcerias -->
+  <section id="section" class="section">
+    <div class="parceiros">
+      <img src="assets/img/home/flaviaranha.svg" style="vertical-align: middle;" alt="">
+      <img src="assets/img/home/armani.svg" style="vertical-align: middle;" alt="">
+      <img src="assets/img/home/gucci.svg" class="gucci" style="vertical-align: middle;" alt="">
+      <img src="assets/img/home/pangaia.svg" style="vertical-align: middle;" alt="">
+      <img src="assets/img/home/valentino.svg" style="vertical-align: middle;" alt="">
+    </div>
+  </section>
+
+  <!-- Desfiles recentes -->
+  <main>
+    <div class="container">
+      <h1 id="titulo-desfile">Desfiles Recentes</h1>
+      <div class="img-desfilesRecentes">
+        <div class="colunasDesfile">
+          <a href="https://vogue.globo.com/desfiles/noticia/2023/09/burberry-or-londres-or-verao-2024.ghtml" target="_blank"><img id="imgRoxo" src="assets/img/home/PFW.png" alt="Imagem do Desfile PFW 2023"></a>
+          <p>MIU MIU | PFW 2023</p>
+          <p class="paragrafoRecentes">Verão 2024</p>
+        </div>
+        <div class="colunasDesfile">
+          <a href="https://vogue.globo.com/desfiles/noticia/2023/09/bottega-veneta-or-milao-or-verao-2024.ghtml" target="_blank"><img id="imgVerde" src="assets/img/home/MFW.png" alt="Imagem do Desfile MFW 2023"></a>
+          <p>BOTTEGA VENETA | MFW 2023</p>
+          <p class="paragrafoRecentes">Verão 2024</p>
+        </div>
+        <div class="colunasDesfile">
+          <a href="https://vogue.globo.com/desfiles/noticia/2023/09/burberry-or-londres-or-verao-2024.ghtml" target="_blank"><img id="imgAmarelo" src="assets/img/home/LFW.png" alt="Imagem do Desfile LFW 2023"></a>
+          <p>BURBERRY | LFW 2023</p>
+          <p class="paragrafoRecentes">Verão 2024</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Ultimas Postagens -->
+  <section id="sectionRoxo" class="sectionRoxo">
+    <div class="container">
+      <h1 class="textPost">ULTIMAS POSTAGENS</h1>
+      <div class="todoConteudo">
+        <div class="caixaUm">
+          <div class="imgPostagem">
+            <img src="assets/img/home/imgPostagem.png" alt="">
+          </div>
+          <div class="conteudoLivro">
+            <div class="imgLivro">
+              <img src="assets/img/home/livro01.png" alt="">
+            </div>
+            <div class="livro-principal">
+              <p class="pLivro">Sustentabilida • Livro - 10,2K leitores </p>
+              <h2 class="tituloLivro">Com que roupa? Guia prático de moda sustentável</h2>
+              <p class="subtitulo">Com dicas práticas de como viver de maneira mais sustentável, a ativista ambiental e
+                apresentadora do GNT Giovanna Nader mostra ao leitor que a moda é um instrumento de revolução e que cada
+                um de nós tem seu papel na tarefa coletiva de salvar o planeta</p>
+              <p class="nomeLivro">Marcela Martinelle • Mar 18, 2023 </p>
+            </div>
+          </div>
+        </div>
+        <div class="caixaDois">
+          <div class="caixasPopulares">
+            <h3 class="titulo">POPULARES</h3>
+            <div class="imgPopulares">
+              <img src="assets/img/home/01.png" alt="">
+              <div class="descricaoPopulares">
+                <h3 class="textPopulares">O Desfile que Parou a Passarela: Semana de Moda!
+                </h3>
+                <p class="data">Jan 15, 2023</p>
+              </div>
+            </div>
+            <div class="imgPopulares">
+              <img src="assets/img/home/02.png" alt="">
+              <div class="descricaoPopulares">
+                <h3 class="textPopulares">Desfiles Sustentáveis: A Revolução Ecológica em Desfiles</h3>
+                <p class="data">Mar 22, 2023</p>
+              </div>
+            </div>
+            <div class="imgPopulares">
+              <img src="assets/img/home/03.png" alt="">
+              <div class="descricaoPopulares">
+                <h3 class="textPopulares">De Paris a Milão: As Tendências Mais Quentes do momento
+                </h3>
+                <p class="data">Jul 11, 2023</p>
+              </div>
+            </div>
+            <div class="imgPopulares">
+              <img src="assets/img/home/04.png" alt="">
+              <div class="descricaoPopulares">
+                <h3 class="textPopulares">Modelos que Dominarão as passarelas em 2023
+                </h3>
+                <p class="data">Dec 03, 2023</p>
+              </div>
+            </div>
+          </div>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/nj4g2BdDgv8?si=yVgFzPkbPdj5HtWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- curiosidades -->
+  <section class="section-curiosidades">
+    <h1 class="titulo-principal"><i class="far fa-lightbulb" style="color: #000000;"></i> CURIOSIDADES</h1>
+    </div>
+    <div class="curiosidades">
+
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-arrow-left" style="color: #141415;"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img">
+              <img src="assets/img/home/gbenga-onalaja-GYeDpQdoTFU-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+          <li class="card" id="homempass">
+            <div class="img">
+              <img src="assets/img/home/prince-akachi-iuqcmC4NVNo-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+          <li class="card" id="pessoasdesf">
+            <div class="img">
+              <img src="assets/img/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+          <li class="card" id="imgcurio">
+            <div class="img">
+              <img src="assets/img/home/gbenga-onalaja-ODw7eqWd3QY-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+          <li class="card" id="imgpass">
+            <div class="img">
+              <img src="assets/img/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+          <li class="card" id="imgdesf">
+            <div class="img">
+              <img src="assets/img/home/raden-prasetya-5vJ6GY0KzBs-unsplash.jpg" alt="" draggable="false">
+            </div>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-arrow-right" style="color: #141415;"></i>
+      </div>
+  </section>
+
+  <!-- waves & explorar -->
+ 
+    <main class="ondas">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </main>
+  <section class="section-explorar">
+      <h1 class="titulo-principal"><iconify-icon icon="ri:global-line" width="44" height="44" style="vertical-align: middle;"></iconify-icon> Comece explorando agora!</h1>
+      <div class="container">  
+        <a class="sublinhado" href="explorar.html"> <div class="caixas">
+
+          <div class="caixa1" id="blue">
+            <div class="icones">
+              <img src="assets/img/home/book.svg" alt="">
+              <div class="border-teste">
+              <p class="textos">LIVROS</p>
+            </div>
+            </div>
+          </div>
+              <div class="caixa1" id="yellow">
+                <div class="icones">
+                  <img src="assets/img/home/Movie.svg" alt="">
+                  <p class="textos">FILMES</p>
+                </div>
+              </div>
+              <div class="caixa1" id="green">
+                <div class="icones">
+                  <img src="assets/img/home/spotify.svg" alt="">
+                  <p class="textos">PODCAST</p>
+                </div>
+              </div>
+              <div class="caixa1" id="pourple">
+                <div class="icones">
+                  <img src="assets/img/home/game 1.svg" alt="">
+                  <p class="textos">JOGOS</p>
+                </div>
+              </div>
+             <div class="caixa1" id="bege">
+              <div class="icones">
+                <img src="assets/img/home/planet.svg" alt="">
+              <p class="textos">ASSINE</p>
+            </div>
+             </div>  
+      </div></a>
+  </div>
+  </section>
+  
+  <!-- time -->
+    <section class="sobreNos" id="criadoras">
+      <div class="container">
+        <h1 class="titulo-principal">
+          <iconify-icon style="vertical-align: bottom;"icon="fluent:person-20-regular" width="44" height="44"></iconify-icon>
+          Conheça as criadoras
+        </h1>
+        <div class="blocos">
+          <div class="bloco1">
+            <div class="foto">
+              <img src="assets/img/home/Ellipse 9.png" alt="">
+            </div>
+            <div class="informacoes-membros">
+              <h3 class="tittle">Èrikas Rocha</h3>
+              <p class="post">Web Design</p>
+              <ul class="social">
+                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.instagram.com/erikardn_/" target="_blank" class="fab fa-instagram"></a></li>
+                <li><a href="https://github.com/ericat888" target="_blank" class="fab fa-github"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="bloco1">
+            <div class="foto">
+              <img src="assets/img/home/Ellipse 11.png" alt="">
+            </div>
+            <div class="informacoes-membros">
+              <h3 class="tittle">Iasmin Gordilho</h3>
+              <p class="post">Desenvolvedora Web</p>
+              <ul class="social">
+                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.instagram.com/_miin.g/" target="_blank" class="fab fa-instagram"></a></li>
+                <li><a href="https://github.com/Iasmincost134" target="_blank" class="fab fa-github"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="bloco1">
+            <div class="foto">
+              <img src="assets/img/home/Ellipse 13.png" alt="">
+            </div>
+            <div class="informacoes-membros">
+            <h3 class="tittle">Júlia Cavalcante</h3>
+              <p class="post">Desenvolvedora Web</p>
+              <ul class="social">
+                <li><a href="https://www.instagram.com/juzlia_/" target="_blank" class="fab fa-facebook-f"></a></li>
+                <li><a href="#" class="fab fa-instagram"></a></li>
+                <li><a href="https://github.com/jjlia777" target="_blank" class="fab fa-github"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="bloco1">
+            <div class="foto">
+              <img src="assets/img/home/Ellipse 12.png" alt="">
+            </div>
+            <div class="informacoes-membros">
+              <h3 class="tittle">Clara Puerta</h3>
+              <p class="post">Web Design</p>
+              <ul class="social">
+                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.instagram.com/clara.puerta/" target="_blank" class="fab fa-instagram"></a></li>
+                <li><a href="https://github.com/Puerta03" target="_blank" class="fab fa-github"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- carrossel de feedback & caixa de feedback -->
+    <section class="infinite-carrossel">
+      <!-- <div class="container"> -->
+        <div class="fdbck">
+          <div class="slider-fdbck">
+            <img src="assets/img/home/fdbck1.png" alt="">
+            <img src="assets/img/home/fdbck2.png" alt="">
+            <img src="assets/img/home/fdbck3.png" alt="">
+            <img src="assets/img/home/Group 16.png" alt="">
+            <img src="assets/img/home/fdbck5.png" alt="">
+            <img src="assets/img/home/fdbck6.png" alt="">
+          </div>
+          <div class="slider-fdbck">
+            <img src="assets/img/home/fdbck1.png" alt="">
+            <img src="assets/img/home/fdbck2.png" alt="">
+            <img src="assets/img/home/fdbck3.png" alt="">
+            <img src="assets/img/home/Group 16.png" alt="">
+            <img src="assets/img/home/fdbck5.png" alt="">
+            <img src="assets/img/home/fdbck6.png" alt="">
+          </div>
+        </div>
+        <main class="enviar-feedback" id="respostas">
+        <div class="container">
+          <div class="div">
+              <h1 id="text-feedback" class="h1Claro">FEEDBACK</h1>
+              <p class="p" id="pCinza">Seu feedback é importante e ajuda a melhorar nossa experiência - por favor, compartilhe sua opinião e nos ajude a crescer juntos!</p>
+          </div>
+          <div class="button-fdbck">
+              <input type="text" id="name" size="10" placeholder="escreva aqui..." />
+              <input type="button" id="enviar" class="enviar" value="enviar"  onclick="abrirAlerta()" />
+          </div>
+        </main>
+      <!-- </div> -->
+    </section>
+    <button class="top" id="top"><i class="fa-solid fa-arrow-up"></i> </button>
+    <footer>
+      <div class="row">
+          <div class="col">
+              <img src="assets/img/home/footerLogo.png" class="logo-footer" alt="logo">
+              <!-- <p> sua fonte definitiva de inspiração e insights para uma jornada única no mundo da moda!</p> -->
+          </div>
+          <div class="col">
+              <h3>Páginas<div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="">Tecnologia</a></li>
+                  <li><a href="">Sustentabilidade</a></li>
+                  <li><a href="">Cultura</a></li>
+                  <li><a href="">Evolução</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h3>Links<div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="#criadoras">Conheça as criadoras</a></li>
+                  <li><a href="#respostas">Feedback</a></li>
+                  <li><a href="#sectionRoxo">Postagens</a></li>
+                  <li><a href="#blue">Explorar</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h3>Redes Sociais<div class="underline"><span></span></div></h3>
+              <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-pinterest"></i>
+                  <!-- <i class="fab fa-youtube"></i> -->
+              </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">©2023 Fashion History.
+          Todos os direitos reservados.Política e Privacidade</p>
+  </footer>
+  <!-- <script src="main.js"></script> -->
+</body>
+</html>

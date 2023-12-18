@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda no Brasil</title>
+    <link rel="shortcut icon" href="images/icon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/modelo.css">
+    <script src="https://kit.fontawesome.com/7857a8a2eb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/PROJETO SEMESTRAL 2/assets/img/home/icon2.ico" type="image/x-icon">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body onload="preCarregamento()">
+    <!-- cabeçalho -->
+    <header class="header">
+      <nav class="nav">
+          <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt=""></a>
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+              <li><a href="botoes/Tecnologia (1)/tec.html">Tecnologia</li></a>
+              <div id="verticle-line"></div>
+              <li><a href="botoes/Sustentabilidade (1)/sust.html">Sustentabilidade</li></a>
+              <div id="verticle-line"></div>
+              <li><a href="botoes/Cultura (1)/cult.html">Cultura</li></a>
+              <div id="verticle-line"></div>
+              <li><a href="botoes/Evolução (1)/evol.html">Evolução</a></li>
+          </ul>
+          <div class="search">
+            <a href="login.html"><button class="login">Login</button></a>
+              <button class="icon" id="search">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000"
+                          d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z">
+                      </path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000"
+                          d="M22 22L20 20">
+                      </path>
+                  </svg>
+              </button>
+              <input placeholder="search.." class="input" name="searchbar" type="text" id="searchbar"
+                  onkeyup="search()">
+          </div>
+      </nav>
+  </header>
+    <div class="progress" id="progress"></div>
+    <div class="pre-carregamento">
+        <div class="efeito-carregamento"></div>
+    </div>
+    <main class="page-wrapper">
+        <div class="content clearfix">
+
+             <div class="main-content">
+                <h1 class="recent-post-title" id="titulo01">Moda no Brasil</h1>
+                <p class="recent-info-title">Érika Rocha  •  Dez 15, 2023 •  10 min read <button><iconify-icon id="speak" icon="carbon:play-outline" style="vertical-align: middle;"></iconify-icon></button><button id="pause"><i class="fa-solid fa-pause"></i></button></p>
+
+             <div class="post">
+                <img src="assets/img/cultura1.png" alt="">
+                <p class="recent-p">A moda no Brasil é uma expressão vibrante e diversificada que reflete a riqueza cultural e a vasta extensão geográfica do país, Com uma mistura única de influências indígenas, africanas, europeias.</p>
+             </div>
+
+             <div class="text">
+                <img src="assets/img/cultura2.png" alt="">
+                <div class="separar">
+                <h1 class="manchete" id="titulo02">Moda Praia/Tropical</h1><br>
+                <p class="paragrafo">A moda praia/tropical no Brasil celebra a exuberância com estampas vibrantes, destacando-se por cortes inovadores. Além do apelo estético, é uma expressão cultural durante festividades como o Carnaval, convidando a um mergulho no estilo de vida vibrante e ensolarado do país.</p>
+                </div>
+            </div>
+             <div class="text">
+                <div class="separar">
+                <h1 class="manchete" id="titulo03">Jeanswear</h1><br>
+                <p class="paragrafo">No Brasil, a moda Jeanswear é uma expressão versátil e atemporal, refletindo a cultura descontraída e urbana. Com peças em denim, marcas locais inovam em cortes e lavagens, oferecendo variedade para diferentes estilos e ocasiões. O jeans transcende o casual, sendo incorporado em looks diurnos e noturnos, destacando a paixão do país pela moda autêntica e descomplicada.</p>
+             </div>
+                <img src="assets/img/cultura3.png" alt="">
+             </div>
+             <div class="text">
+                <img src="assets/img/cultura4.png" alt="">
+                <div class="separar">
+                <h1 class="manchete" id="titulo04">Carnaval</h1><br>
+                <p class="paragrafo">A moda no Carnaval brasileiro é uma explosão de cores e criatividade, refletindo a alegria da festividade. Fantasias elaboradas tornam-se expressões artísticas carregadas de elementos culturais, proporcionando uma celebração única da diversidade e liberdade expressiva durante o evento emblemático.</p>
+            </div>
+             </div>
+  <div class="comments-container">
+    <h1>Comentários</h1>
+
+    <ul id="comments-list" class="comments-list">
+      <li>
+        <div class="comment-main-level">
+          <div class="comment-foto"><img src="assets/img/person1.jpeg" alt=""></div>
+
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name by-author">Kauã Cruz</h6>
+              <span>há 20 minutos atrás</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+             Depois desse post percebi como a moda brasileira se destaca...
+            </div>
+          </div>
+        </div>
+        <ul class="comments-list reply-list">
+          <li>
+            <div class="comment-foto"><img src="assets/img/person3.jpeg" alt=""></div>
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name">Gabriela Vitória</h6>
+                <span>há 10 minutos atrás</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Siim, se destaca pela diversidade cultural, influências sustentáveis e uma forte presença global de designers
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="comment-foto"><img src="assets/img/person1.jpeg" alt=""></div>
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name by-author">Kauã Cruz</h6>
+                <span>há 7 minutos atrás</span>
+                <i class="fa fa-reply"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+              Concordo @gabi. 
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="comment-main-level">
+          <div class="comment-foto"><img src="assets/img/person2.jpeg" alt=""></div>
+          <div class="comment-box">
+            <div class="comment-head">
+              <h6 class="comment-name">Gabriel Silva</h6>
+              <span>Agora pouco</span>
+              <i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="comment-content">
+              A rica mistura de influências culturais no Brasil, incluindo cores vibrantes e elementos do Carnaval, inspira uma moda única e diversificada, refletindo a energia e a criatividade do país.
+            <input type="text"  id="campos" placeholder="Adicionar um comentário...">
+            <button class="enviar" onclick="enviar()" >Enviar</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+         
+</div>
+
+            <div class="sidebar">
+                <div class="section topics">
+                    <h2>Tópicos</h2>
+                    <ul>
+                        <li><a href="#titulo01">Os primeiros desfiles </a></li>
+                        <li><a href="#titulo02">Moda Praia/Tropical</a></li>
+                        <li><a href="#titulo03">Jeanswear</a></li>
+                        <li><a href="#titulo04">Carnaval</a></li>
+                      </ul>
+
+                      <div class="section-popular">
+                        <h2>Populares</h2>
+                        <ul>
+                    <li>
+                        <div class="bloco">
+                        <img src="assets/img/01.png" alt="">
+                        <p>O Desfile que <br> Parou a <br>Passarela!</p>
+                    </div>
+                    </li>
+                
+                
+                    <li>
+                        <div class="bloco">
+                        <img src="assets/img/02.png" alt="">
+                        <p> A Revolução <br>Ecológica em <br> Desfiles</p>
+                    </div>
+                    </li>
+                    
+                    <li>
+                        <div class="bloco">
+                        <img src="assets/img/03.png" alt="">
+                        <p>De Paris a Milão: <br> As Tendências <br>Mais Quentes do <br>momento</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="bloco">
+                        <img src="assets/img/04.png" alt="">
+                        <p>Descubra os <br>modelos que <br> Dominarão as <br>passarelas</p>
+                    </div>
+                    </li>
+                   </ul>
+                        </div>
+                  </div>
+            </div>
+</div>
+</main>
+<select name="voices" id="voices">
+</select>
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="img/logoBranca-Footer.svg" class="logo-footer" alt="logo">
+            <p>©2023 Fashion History.
+                Todos os direitos reservados.Política e Privacidade</p>
+        </div>
+        <div class="col">
+            <h3>Tags<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Redes Sociais<div class="underline"><span></span></div></h3>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <!-- <i class="fab fa-youtube"></i> -->
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">©2023 Fashion History.
+        Todos os direitos reservados.Política e Privacidade</p>
+</footer>
+    <script>
+        let prog = document.getElementById('progress');
+
+let body = document.body,
+    html = document.documentElement;
+
+let height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+const setProgress = () => {
+   let scrollFromTop = (document.documentElement.scrollTop || body.scrollTop) + html.clientHeight;
+   let width = scrollFromTop / height * 100 + '%';
+
+   console.log('scroll', html.clientHeight, body.scrollTop);
+
+   prog.style.width = width;
+}
+
+window.addEventListener('scroll', setProgress);
+
+setProgress();
+        function enviar (){
+            const campo = document.querySelector('#campos');
+            campo.value = ''
+        }
+
+        const pre_carregamento = document.querySelector("div.pre-carregamento");
+
+        function preCarregamento() {
+            pre_carregamento.style.opacity = "0"
+
+            setTimeout(() => {
+                pre_carregamento.style.display = "none";
+            }, 3000);
+        }
+        const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+(() => {
+    if (!"speechSynthesis" in window) {
+      alert("Sorry, your browser doesn't support text to speech!");
+      return;
+    }
+  
+    const button = document.getElementById("speak");
+    const pauseButton = document.getElementById("pause");
+    const voiceSelect = document.getElementById("voices");
+    const synth = window.speechSynthesis;
+    const voices = synth.getVoices();
+  
+    setVoices();
+  
+    button.addEventListener("click", () => {
+      if (synth.paused === true) {
+        synth.resume();
+        return;
+      }
+  
+      const main = document.querySelector("main");
+      textToSpeech(main.innerText);
+    });
+  
+    pauseButton.addEventListener("click", () => {
+      synth.pause();
+    });
+  
+    function textToSpeech(text) {
+      const msg = new SpeechSynthesisUtterance();
+      msg.text = text;
+      msg.voice = getSelectedVoice();
+  
+      synth.speak(msg);
+    }
+  
+    function setVoices() {
+      if (voices.length === 0) {
+        alert("Desculpas, parece que este navegador não suporta vozes diferentes.");
+        voiceSelect.remove();
+      }
+  
+      for (let i = 0; i < voices.length; i++) {
+        const option = document.createElement("option");
+        option.textContent = `${voices[i].name} (${voices[i].lang})`;
+  
+        if (voices[i].default) {
+          option.textContent += " — DEFAULT";
+        }
+  
+        option.setAttribute("data-lang", voices[i].lang);
+        option.setAttribute("data-name", voices[i].name);
+        voiceSelect.appendChild(option);
+      }
+    }
+  
+    function getSelectedVoice() {
+      const option = voiceSelect.selectedOptions[0];
+      return voices.find(
+        (voice) =>
+          voice.name === option.dataset.name && voice.lang === option.dataset.lang
+      );
+    }
+  })();
+    </script>
+
+</body>
+</html>

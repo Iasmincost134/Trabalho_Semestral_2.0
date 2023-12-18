@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorar - Fashion History</title>
+  <link rel="stylesheet" href="assets/css/explorar.css">
+  <script src="assets/js/explorar.js" defer></script>
+  <script src="https://kit.fontawesome.com/7857a8a2eb.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="assets/img/home/icon2.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- cabeçalho -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt=""></a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="botoes/Tecnologia (1)/tec.css">Tecnologia</li></a>
+        <div id="verticle-line"></div>
+        <li><a href="botoes/Sustentabilidade (1)/sust.html">Sustentabilidade</li></a>
+        <div id="verticle-line"></div>
+        <li><a href="botoes/Cultura (1)/cult.html">Cultura</li></a>
+        <div id="verticle-line"></div>
+        <li><a href="botoes/Evolução (1)/evol.html">Evolução</a></li>
+      </ul>
+      <div class="search">
+        <a href="login.html"><button class="login">Login</button></a>
+        <button class="icon" id="search">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000"
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z">
+            </path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000" d="M22 22L20 20">
+            </path>
+          </svg>
+        </button>
+        <input placeholder="search.." class="search-icon" name="searchbar" type="text" id="searchbar"
+          onkeyup="search()">
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- slider -->
+  <div class="content">
+
+    <div class="slides">
+
+      <input class="input" type="radio" name="slide" id="slide1" checked>
+      <input class="input" type="radio" name="slide" id="slide2">
+      <input class="input" type="radio" name="slide" id="slide3">
+      <input class="input" type="radio" name="slide" id="slide4">
+      <input class="input" type="radio" name="slide" id="slide5">
+
+
+      <div class="slide s1">
+        <img src="assets/img/explorar-img/slide1.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src=" assets/img/explorar-img/slide2.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="assets/img/explorar-img/slide3.png" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="assets/img/explorar-img/slide4.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="navigation">
+    <label class="bar" for="slide1"></label>
+    <label class="bar" for="slide2"></label>
+    <label class="bar" for="slide3"></label>
+    <label class="bar" for="slide4"></label>
+  </div>
+
+  <!-- linha -->
+  <main>
+    <!-- <div class="line"></div> -->
+    <div class="icons-container">
+      <div class="line"></div>
+      <div class="icons">
+        <a id="#spotify"><img src="assets/img/explorar-img/spotifysvg.svg" alt=""></a>
+       
+          <a><img src="assets/img/explorar-img/book.svg" alt=""></a>
+          <a id="#movie-scroll"><img src="assets/img/explorar-img/Movie.svg" alt=""></a>
+            <a><img src="assets/img/explorar-img/game.svg" alt=""></a>
+              <a><img src="assets/img/explorar-img/planet.svg" alt=""></a>
+      </div>
+      <div class="line2"></div>
+    </div>
+  </main>
+
+  <section class="mini-player" id="spotify">
+    <div class="player">
+      <div class="wrapper">
+        <div class="details">
+          <div class="now-playing">PLAYING x OF y</div><span><a href="https://open.spotify.com/playlist/1KauP78wlvZIFPhFCFtTzu" target="_blank">confira no spotify</a></span>
+          <div class="track-art"></div>
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">00:00</div>
+        </div>
+
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+
+        <div class="buttons">
+          <div class="random-track" onclick="randomTrack()">
+            <i class="fas fa-random fa-2x" title="random"></i>
+          </div>
+          <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+          </div>
+          <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+          <div class="repeat-track" onclick="repeatTrack()">
+            <i class="fa fa-repeat fa-2x" title="repeat"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="component">
+    <ul class="align">
+      <li>
+        <figure class='book'>
+          <ul class='hardcover_front'>
+            <li>
+              <img src="assets/img/explorar-img/book01.jpg" alt="" width="100%" height="100%">
+            </li>
+            <li></li>
+          </ul>
+          <ul class='page'>
+            <li></li>
+            <li>
+              <a class="btn"
+                href="https://www.amazon.com.br/Moda-Sustentabilidade-Uma-Reflex%C3%A3o-Necess%C3%A1ria/dp/8560166602"
+                target="_blank">Compre agora!</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class='hardcover_back'>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class='book_spine'>
+            <li></li>
+            <li></li>
+          </ul>
+          <figcaption>
+            <h1 class="titulo-livro">Moda e sustentabilidade</h1>
+            <span>Autor: Lilyan Berlim</span>
+            <p>Apresentamos uma série de dados, propondo uma maior contextualização do assunto e reflexões no que tange
+              nosso estilo de vida, nossos hábitos de consumo e nossos modelos de negócios.</p>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li>
+        <figure class='book'>
+
+          <ul class='hardcover_front'>
+            <li>
+              <img src="assets/img/explorar-img/book02.jpg" alt="" width="100%" height="100%">
+            </li>
+            <li></li>
+          </ul>
+
+          <ul class='page'>
+            <li></li>
+            <li>
+              <a class="btn"
+                href="https://www.amazon.com.br/Com-que-roupa-pr%C3%A1tico-sustent%C3%A1vel-ebook/dp/B094RFHHZ8"
+                target="_blank">Compre agora!</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class='hardcover_back'>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class='book_spine'>
+            <li></li>
+            <li></li>
+          </ul>
+          <figcaption>
+            <h1 class="titulo-livro"> Com que roupa? guia prático de moda sustentável</h1>
+            <span>Autor: Giovanna Nader</span>
+            <p>Giovanna Nader mostra ao leitor que a moda é um instrumento de revolução e que cada um de nós tem seu
+              papel na tarefa coletiva de salvar o planeta. Moda é comportamento e sociedade. </p>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li>
+        <figure class='book'>
+
+          <ul class='hardcover_front'>
+            <li>
+              <img src="assets/img/explorar-img/book03.jpg" alt="" width="100%" height="100%">
+            </li>
+            <li></li>
+          </ul>
+
+          <ul class='page'>
+            <li></li>
+            <li>
+              <a class="btn"
+                href="https://www.amazon.com.br/Moda-sustentabilidade-Design-para-mudan%C3%A7a/dp/853960163X"
+                target="_blank">Compre agora!</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <ul class='hardcover_back'>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class='book_spine'>
+            <li></li>
+            <li></li>
+          </ul>
+          <figcaption>
+            <h1 class="titulo-livro">Moda e sustentabilidade: design para mudança</h1>
+            <span>Autores: Kate Fletcher, Lynda Grose</span>
+            <p>Nenhum produto recebe tanta divulgação e é tão analisado quanto o de moda. Mas a superconsciência sobre
+              estilos, tecidos e cores não inclui o mundo por trás dos cabideiros, a tecnologia por trás do corte.</p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container-filme" id="movie-scroll">
+
+    <div class="cartazes">
+
+      <input class="input" type="radio" name="card" id="card1" checked>
+      <input class="input" type="radio" name="card" id="card2">
+      <input class="input" type="radio" name="card" id="card3">
+      <input class="input" type="radio" name="card" id="card4">
+
+
+      <div class="card c2">
+        <div class="banner">
+          <a href="https://www.disney.com.br/filmes/cruella" target="_blank"><img src="assets/img/explorar-img/movie1.png" class="bg" alt=""></a>
+          <div class="info">
+            <h1 class="movieTitle">CRUELLA</h1>
+            <h4>
+              <span>2021</span>
+              <span><i id="amarelo">12+</i></span>
+              <span>2h 14min</span>
+              <span>Comédia Aventura</span>
+            </h4>
+            <p class="descricao">Inteligente, criativa e determinada, Estella quer fazer um nome para si através de seus
+              designs e acaba chamando a atenção da Baronesa Von Hellman. Entretanto, o relacionamento delas desencadeia
+              um curso de eventos e revelações que fazem com que Estella abrace seu lado rebelde e se torne a Cruella,
+              uma pessoa má, elegante e voltada para a vingança. Suas criações arrojadas e provocativas rapidamente conquistam a alta sociedade, tornando-a uma presença inevitável nos eventos mais glamorosos da cidade. A reputação de Cruella como uma designer destemida e destemperada se espalha, adicionando uma dimensão única à trama.</p>
+            <div class="movie-button">
+              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="banner">
+          <a href="https://www.starplus.com/pt-br/movies/o-diabo-veste-prada/kaiaozWbNugM" target="_blank"><img src="assets/img/explorar-img/movie2.png" class="bg" alt=""></a>
+          <div class="info">
+            <h1 class="movieTitle">O DIABO VESTE PRADA</h1>
+            <h4>
+              <span>2006</span>
+              <span><i id="verde">L</i></span>
+              <span>1h 49min</span>
+              <span>Comédia</span>
+            </h4>
+            <p class="descricao">A recém-formada Andy tem grandes sonhos e vai trabalhar na conceituada revista de moda
+              "Runway". A sua função é ser assistente da diabólica Miranda Priestly. Andy não se sente bem no ambiente
+              tenso da redação e questiona sua habilidade em continuar trabalhando com Miranda.</p>
+            <div class="movie-button">
+              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="banner">
+          <a href="https://www.netflix.com/br/title/81037371" target="_blank"><img src="assets/img/explorar-img/movie3.png" class="bg" alt=""></a>
+          <div class="info">
+           <h1 class="movieTitle">EMILY EM PARIS</h1>
+            <h4>
+              <span>2020</span>
+              <span><i id="vermelho">14+</i></span>
+              <span>3 temporadas</span>
+              <span>Romance</span>
+            </h4>
+            <p class="descricao">Emily in Paris é uma série de televisão americana de comédia dramática e romântica
+              criada por Darren Star para a Netflix. A série é estrelada por Lily Collins como a aspirante a executiva
+              de marketing Emily Cooper, uma americana que se muda para Paris para fornecer um ponto de vista americano
+              a uma empresa de marketing francesa.</p>
+            <div class="movie-button">
+              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="banner">
+          <a href="https://www.adorocinema.com/filmes/filme-221423/" target="_blank"><img src="assets/img/explorar-img/movie4.png" class="bg" alt=""></a>
+          <div class="info">
+          <h1 class="movieTitle">A VINGANÇA ESTÁ NA <br>MODA</h1>
+            <h4>
+              <span>2015</span>
+              <span><i id="vermelho">14+</i></span>
+              <span>1h 58min</span>
+              <span>Drama/Mistério</span>
+            </h4>
+            <p class="descricao">Inteligente, criativa e determinada, Estella quer fazer um nome para si através de seus
+              designs e acaba chamando a atenção da Baronesa Von Hellman. Entretanto, o relacionamento delas desencadeia
+              um curso de eventos e revelações que fazem com que Estella abrace seu lado rebelde e se torne a Cruella,
+              uma pessoa má, elegante e voltada para a vingança.</p>
+            <div class="movie-button">
+              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navigar">
+    <label class="bar1" for="card1"></label>
+    <label class="bar1" for="card2"></label>
+    <label class="bar1" for="card3"></label>
+    <label class="bar1" for="card4"></label>
+  </div>
+
+  <section class="section-explorar">
+    <div class="container">
+      <div class="caixas">
+        <a class="sublinhado" href="jogo.html">
+        <div class="caixa1">
+          <div class="icones">
+            <img src="assets/img/explorar-img/dress.svg" alt="">
+            <p class="textos">VESTIR <BR>BONECA</p>
+          </div>
+          <span class="game-preview">Se divirta com este jogo e personalize da forma que preferir!</span><br>
+          <a class="a-jogo" href="">-Veja mais</a>
+        </div></a>
+
+        <a class="sublinhado" href="contagem.html"><div class="caixa1" id="contagem">
+          <div class="icones">
+            <img src="assets/img/explorar-img/head.svg" alt="">
+            <p class="textos">JOGO DA<br>MEMORIA</p>
+          </div>
+          <span class="game-preview">Se divirta com este jogo e teste sua habilidade de memorizar!</span><br>
+          <a class="a-jogo" href="">-Veja mais</a>
+        </div></a>
+
+        <a href="contagem.html" class="sublinhado"><div class="caixa1">
+          <div class="icones">
+            <img src="assets/img/explorar-img/pergunta.svg" alt="">
+            <p class="textos">MODA<br>QUIZZ</p>
+          </div>
+          <span class="game-preview">Se divirta com este jogo e teste seus conhecimentos sobre moda!</span><br>
+          <a class="a-jogo" href="">-Veja mais</a>
+        </div></a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="abaixo-assinado">
+    <div class="blocos">
+      <div class="bloco">
+        <img class="assinar" id="aviao" src="assets/img/explorar-img/world.jpg" alt="">
+        <h1>Preservação Ambiental <br>na Moda</h1>
+        <p>+1.006 assinaturas</p>
+        <a href="https://www.vertown.com/blog/industria-moda-impactos-meio-ambiente/" target="_blank"><button>apoiar a causa</button></a>
+      </div>
+
+      <div class="bloco">
+        <img class="assinar" src="assets/img/explorar-img/assine.png" alt="">
+        <div class="informacoes">
+          <h1 class="text-assinar">Igualdade no mercado <br>de moda</h1>
+          <p class="p-assinar">+123 assinaturas</p>
+          <a href="https://peticaopublica.com.br/psign.aspx?pi=desfiles" target="_blank"><button class="btn-assinar">apoiar a causa</button></a>
+        </div>
+      </div>
+
+      <div class="bloco">
+        <img class="assinar" src="assets/img/explorar-img/avio.jpg" alt="">
+        <h1>Moda sem veneno: Diga<br> Não ao PL</h1>
+        <p>+52.598 assinaturas</p>
+        <a href="https://www.change.org/p/moda-sem-veneno-diga-n%C3%A3o-ao-pl-6299-02-conhecido-como-pl-do-veneno" target="_blank"><button>apoiar a causa</button></a>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+        <div class="col">
+            <img src="assets/img/home/footerLogo.png" class="logo-footer" alt="logo">
+            <!-- <p> sua fonte definitiva de inspiração e insights para uma jornada única no mundo da moda!</p> -->
+        </div>
+        <div class="col">
+            <h3>Páginas<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="">Tecnologia</a></li>
+                <li><a href="">Sustentabilidade</a></li>
+                <li><a href="">Cultura</a></li>
+                <li><a href="">Evolução</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="#criadoras">Conheça as criadoras</a></li>
+                <li><a href="#respostas">Feedback</a></li>
+                <li><a href="#sectionRoxo">Postagens</a></li>
+                <li><a href="#blue">Explorar</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Redes Sociais<div class="underline"><span></span></div></h3>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <!-- <i class="fab fa-youtube"></i> -->
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">©2023 Fashion History.
+        Todos os direitos reservados.Política e Privacidade</p>
+</footer>
+</body>
+
+</html>
